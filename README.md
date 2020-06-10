@@ -28,15 +28,12 @@ Runable JAR files that can be directly run from command line
 ### Model training using source code [Eclipse project]
 Eclipse project flise structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point of the training models is:
 ```diff
-- TainTreeModel.java
+- TrainTree.java
 ```
 
-Run Configuration setup 
-Command argument option
-<empty>
-VM-Argument
-<-Xms7000m -Xmx7000m>
-
+Under eclipse project *run configuration* setup is as follows
+Command argument option: <empty>
+VM-Argument option: <-Xms7000m -Xmx7000m>
 
 
 ### Hyperparamter setting
