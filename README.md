@@ -13,6 +13,28 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ## Project structure, data, and source code files
 ...
 
+## Model Evaluation
+Runable JAR files that can be directly run from command line
+
+```diff
+java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
+```
+
+Eclipse project flise structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
+```diff
++ EvaluateTreeModels.java
+```
+Under eclipse project necessary *run configuration* setup is as follows:
+* Command argument option: 
+  - < empty >
+  - < mnist >
+* VM-Argument option: <-Xms7000m -Xmx7000m>
+
+
+## Pre-trained models
+..
+
 
 
 ## Model Training 
@@ -69,10 +91,3 @@ experiment_training_setup.txt is a json format hyperparamter experiment setup ar
 "n_check_epoch_set": "test"}        ["train", "test"]  check models performance on training set and test set during the learning it on training set.
 ```
 
-## Model Evaluation
-...
-
-
-
-## Pre-trained models
-..
