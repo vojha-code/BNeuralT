@@ -31,9 +31,9 @@ Eclipse project flise structure has a folder **src** in the folder under the pac
 + TrainTree.java
 ```
 
-Under eclipse project *run configuration* setup is as follows
-Command argument option: <empty>
-VM-Argument option: <-Xms7000m -Xmx7000m>
+Under eclipse project *run configuration* setup is as follows:
+* Command argument option: <empty>
+* VM-Argument option: <-Xms7000m -Xmx7000m>
 
 
 ### Hyperparamter setting
