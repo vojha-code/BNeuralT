@@ -19,17 +19,13 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ...
 
 ### Hyperparamter setting
-
-json format hyperparamter experiment setup files
-<span style="color:blue">some *This is Blue italic.* text</span>
-
-#```diff
+experiment_training_setup.txt is a json format hyperparamter experiment setup arrangement of hyperparamters.
 
 ```diff
 {"n_num_exp": "1",   - number of times an experment to be rapeated
 "n_data_name": "mnist.csv",  -  name of a dataset
-"n_problem_type": "Classification",  - 
-"n_should_normalize_data": "true", 
+"n_problem_type": "Classification",  [options: "Classification", "regression"] - the algorithm data pre-processing module depends on problem type defination 
+"n_should_normalize_data": "true",  - [options:  ]
 "n_scale": "[0.0, 1.0]", 
 "n_validation_method": "holdout", 
 "n_training_set_size": "0.8", 
