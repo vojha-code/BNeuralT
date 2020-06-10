@@ -18,13 +18,15 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ## Model Training 
 ...
 
-## Hyperparamter setting
+### Hyperparamter setting
 
 json format hyperparamter experiment setup files
+<span style="color:blue">some *This is Blue italic.* text</span>
 
+#```diff
 
-{
-"n_num_exp": "1",   <span style="color:red"> number of times an experment to be rapeated </span>
+```diff
+{"n_num_exp": "1",   - number of times an experment to be rapeated
 "n_data_name": "mnist.csv",  -  name of a dataset
 "n_problem_type": "Classification",  - 
 "n_should_normalize_data": "true", 
@@ -54,10 +56,7 @@ json format hyperparamter experiment setup files
 "n_gd_beta1": "0.9", 
 "n_gd_beta2": "0.9",
 "n_param_opt_max_itr": "10",
-"n_check_epoch_set": "test" 
-}
-
-```diff
+"n_check_epoch_set": "test"}
 ```
 
 ## Model Evaluation
