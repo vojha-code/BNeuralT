@@ -35,7 +35,7 @@ Under eclipse project necessary *run configuration* setup is as follows:
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
 
-## Pre-trained models
+### Pre-trained models files and folder structure setup for model evaluation
 
 - BNeuralT
   - trained_models
@@ -50,6 +50,13 @@ Under eclipse project necessary *run configuration* setup is as follows:
         - 30 dir <data_name instance number>
           - 6 pre trained model files <Optimizer name models [DOT] json> 
           - 1 experiment files <"experiment" [DOT] txt> preserverd training data sequence
+  - BNeuralT_pre_trained_class_reg_models_coll.csv
+  - MLP_Keras_TF_models_coll.csv
+  - Table_1_class_reg_BNeuralT_MLP_models.csv
+  - Table_1_mean_std_class_reg_BNeuralT_MLP_models.csv
+  - Table_1_stats_class_reg_BNeuralT_MLP_models.csv
+  - Table_2_BNeuralT_models.csv
+
 
 
 ## Model Training 
