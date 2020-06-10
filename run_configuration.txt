@@ -2,9 +2,7 @@
 Folder structure -  Eclipse
 
 Training a model
-
 Experiment setup file and options
-
 Command
 java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
 java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
@@ -16,8 +14,9 @@ Command argument option
 VM-Argument
 <-Xms7000m -Xmx7000m>
 
-TainTreeModel.java
+TrainTree.java
 
+Model evaluation
 java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 
