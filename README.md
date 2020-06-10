@@ -23,7 +23,7 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 json format hyperparamter experiment setup files
 
 {
-"n_num_exp": "1", <br>
+"n_num_exp": "1",  * number of times an experment to be rapeated * <br>
 "n_data_name": "iris.csv", <br>
 "n_problem_type": "Classification", <br>
 "n_should_normalize_data": "true", <br>
