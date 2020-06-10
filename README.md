@@ -36,8 +36,19 @@ Under eclipse project necessary *run configuration* setup is as follows:
 
 
 ## Pre-trained models
-..
 
+- BNeuralT
+  - trained_models
+    - pre_trained_mnist_models_tab2 (MNIST dataset models)
+      - mnist_pre_trained_models
+        - BNeuralT 10K
+        - BNeuralT 18K
+        - BNeuralT 20K
+        - BNeuralT 200K
+    - pre_trained_class_reg_models
+      - <datasets names>
+        - <data_name instance number>
+          - <Optimizer name models [DOT] json>
 
 
 ## Model Training 
