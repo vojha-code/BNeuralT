@@ -22,7 +22,7 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 experiment_training_setup.txt is a json format hyperparamter experiment setup arrangement of hyperparamters.
 
 ```diff
-v{"n_num_exp": "1",                  [1,2,3... ] - number of times an experiment to be repeated
+{"n_num_exp": "1",                  [1,2,3... ] - number of times an experiment to be repeated
 "n_data_name": "mnist.csv",  -      [<data name><dot>csv ] - name of a dataset
 "n_problem_type": "Classification", ["Classification", "regression"] - learning problem type for data pre-processing module depends on problem type definition  
 "n_should_normalize_data": "true",  ["true", "false"]  - for regression problems normalization is efective for gradient descent
@@ -44,9 +44,9 @@ v{"n_num_exp": "1",                  [1,2,3... ] - number of times an experiment
 "n_gd_precision": "0.0000000001",   - precision of weight update check
 "n_gd_eta": "0.1",                  - a value in [0.0 - 1.0] learning rate [0.1,0.01, 0.001] are effective learning rates in decreasing order of learning speed
 "n_gd_gamma": "0.9",                - a value in [0.0 - 1.0] momentum rate
-"n_gd_beta": "0.9",                 - a value in [0.0 - 1.0] decay rates
-"n_gd_beta1": "0.9",                - a value in [0.0 - 1.0] decay rates
-"n_gd_beta2": "0.9",                - a value in [0.0 - 1.0] decay rates
+"n_gd_beta": "0.9",                 - a value in [0.0 - 1.0] decay rates (RMSprop)
+"n_gd_beta1": "0.9",                - a value in [0.0 - 1.0] decay rates (Adam) 
+"n_gd_beta2": "0.9",                - a value in [0.0 - 1.0] decay rates (Adam)
 "n_param_opt_max_itr": "10",        [1,2,3,...] gradient descent learning epochs -  balance it with learning rate 
 "n_check_epoch_set": "test"}        ["train", "test"]  check models performance on training set and test set during the learning it on training set.
 ```
