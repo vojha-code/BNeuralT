@@ -1,0 +1,5 @@
+File,Data,Algo,Size,Param,ErrTst
+BNeuralT_1_11K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,10160,11987,0.07740000000000002
+BNeuralT_2_18K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,16739,18836,0.06510000000000005
+BNeuralT_3_20K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,20172,23835,0.06010000000000004
+BNeuralT_4_200K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,220956,241999,0.05289999999999995
