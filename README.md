@@ -39,8 +39,8 @@ experiment_training_setup.txt is a json format hyperparamter experiment setup ar
 "n_fun_type": "sigmoid",            ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
 "n_out_fun_type": "sigmoid",        ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
 "n_algo_param": "rmsprop",          ["gd","momentum_gd","nesterov_accelerated_gd","adagrad","rmsprop","adam"] - gradient descent optimizers
-"n_gd_eval_mode": "stochastic",     [: 
-"n_gd_batch_size": "10"             ["stochastic", "mini_batch", "batch"] - stochastic and mini_batch are efective
+"n_gd_eval_mode": "stochastic",     ["stochastic", "mini_batch", "batch"] - stochastic and mini_batch are efective
+"n_gd_batch_size": "10"             [1,2,3....] a number appropriate (smaller than training set size)
 "n_gd_precision": "0.0000000001",   - precision of weight update check
 "n_gd_eta": "0.1",                  - a value in [0.0 - 1.0] learning rate [0.1,0.01, 0.001] are effective learning rates in decreasing order of learning speed
 "n_gd_gamma": "0.9",                - a value in [0.0 - 1.0] momentum rate
