@@ -16,7 +16,23 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 
 
 ## Model Training 
-...
+
+### Model training using command line 
+Runable JAR files that can be directly run from command line
+
+```diff
++ java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
++ java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
+```
+
+Training Source code [eclipse project]
+Run Configuration setup 
+Command argument option
+<empty>
+VM-Argument
+<-Xms7000m -Xmx7000m>
+
+TainTreeModel.java
 
 ### Hyperparamter setting
 experiment_training_setup.txt is a json format hyperparamter experiment setup arrangement of hyperparamters.
