@@ -17,7 +17,9 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 Runable JAR files that can be directly run from command line
 
 ```diff
+# evaluation of classification and regression learning problems pre-trained models and reproducing results in Table 1
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+# evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 2
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
 
