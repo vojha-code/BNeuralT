@@ -46,10 +46,10 @@ Under eclipse project necessary *run configuration* setup is as follows:
         - BNeuralT 20K
         - BNeuralT 200K
     - pre_trained_class_reg_models
-      - dir <datasets names>
-        - dir <data_name instance number>
-          - pre trained model files <Optimizer name models [DOT] json> 
-          - experiment files <"experiment" [DOT] txt> preserverd training data sequence
+      - dir <dataset name>
+        - 30 dir <data_name instance number>
+          - 6 pre trained model files <Optimizer name models [DOT] json> 
+          - 1 experiment files <"experiment" [DOT] txt> preserverd training data sequence
 
 
 ## Model Training 
