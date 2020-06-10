@@ -1,35 +1,31 @@
 
-
-Folder strcure
+Folder structure -  Eclipse
 
 Training a model
 
-Experimnet setupp file and options
+Experiment setup file and options
 
 Command
 java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
 java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
 
-Training Source code [eclipse projec]
-Run Comfiguration setup 
-Command argumnent option
+Training Source code [eclipse project]
+Run Configuration setup 
+Command argument option
 <empty>
-VM-Argumnet
+VM-Argument
 <-Xms7000m -Xmx7000m>
 
 TainTreeModel.java
 
-
-
-
 java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 
-Run Comfiguration setup 
-Command argumnent option
+Run Configuration setup 
+Command argument option
 <empty>
 <mnist>
-VM-Argumnet for 
+VM-Argument for 
 <-Xms7000m -Xmx7000m>
 
 EvaluateTreeModel.java
