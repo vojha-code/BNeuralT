@@ -6,11 +6,11 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ...
 
 
-## Dependecies and configurations
+## Dependencies and configurations
 ...
 
 
-## Project strcture, data, and source code files
+## Project structure, data, and source code files
 ...
 
 
