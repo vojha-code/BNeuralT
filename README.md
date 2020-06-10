@@ -14,10 +14,11 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ...
 
 ## Model Evaluation
+### Step 1 - collecting test accuracry from pre-trained models
 Runable JAR files that can be directly run from command line
 
 ```diff
-# evaluation of classification and regression problems pre-trained models and reproducing results in Table 1
+# evaluation of classification and regression problems pre-trained models test accuracy collection
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 
 # evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 2
@@ -34,6 +35,19 @@ Under eclipse project necessary *run configuration* setup is as follows:
   - < mnist >
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
+### Step 2 - running python scripts for *results* CSV files 
+Python 3.5 and above version will run the following scripts
+
+```diff
+# evaluation of classification and regression problems pre-trained models and reproducing results in Table 1
+! python evaluateTreeModels.py
+
+# evaluation of classification and regression problems mean and standard deviation Table
+! python evaluateTreeModelsMeanStd.py
+
+# evaluation of classification and regression problems Welch's t-test Table
+! python evaluateTreeModelsStats.py
+```
 
 ### Pre-trained models files and folder structure setup for model evaluation
 
