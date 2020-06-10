@@ -1,0 +1,35 @@
+
+
+Folder strcure
+
+Training a model
+
+Experimnet setupp file and options
+
+Command
+java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
+java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
+
+Training Source code [eclipse projec]
+Run Comfiguration setup 
+Command argumnent option
+<empty>
+VM-Argumnet
+<-Xms7000m -Xmx7000m>
+
+TainTreeModel.java
+
+
+
+
+java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
+
+Run Comfiguration setup 
+Command argumnent option
+<empty>
+<mnist>
+VM-Argumnet for 
+<-Xms7000m -Xmx7000m>
+
+EvaluateTreeModel.java
