@@ -14,7 +14,7 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ...
 
 ## Model Evaluation
-### Step 1 - collecting test accuracry from pre-trained models
+### Step 1 - test accuracry collection from pre-trained models
 Runable JAR files that can be directly run from command line
 
 ```diff
