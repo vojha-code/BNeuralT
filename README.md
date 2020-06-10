@@ -18,6 +18,9 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ## Model Training 
 ...
 
+## Hyperparamter setting
+...
+
 
 ## Model Evaluation
 ...
