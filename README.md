@@ -22,10 +22,12 @@ Setup of exlipse project strcutre is as follows:
   - src (Java version 8 source files)
   - trained_models 
 ###### datasets
-All csv files for classification and regression problem is in data folder
+All csv files for classification and regression learning problems are in directory *data*
+
 MNIST csv files is too big to upload on GitHub - can be downloaded and put in the folder *data*
 MNIST files can be downloaded from
   - [mnist.csv](https://drive.google.com/file/d/1MVmbNkIsYvxS3apGiyOrAq_dpC5OQ8X_/view) processed to fit with data pre-processing
+  - [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
 
 ###### project directory structure 
 
