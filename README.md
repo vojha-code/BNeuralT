@@ -24,9 +24,9 @@ json format hyperparamter experiment setup files
 
 ```diff
 {
-"n_num_exp": "1",     - number of times an experment to be rapeated
-"n_data_name": "iris.csv", 
-"n_problem_type": "Classification",
+"n_num_exp": "1",   <span style="color:red"> number of times an experment to be rapeated </span>
+"n_data_name": "mnist.csv",  -  name of a dataset
+"n_problem_type": "Classification",  - 
 "n_should_normalize_data": "true", 
 "n_scale": "[0.0, 1.0]", 
 "n_validation_method": "holdout", 
@@ -34,14 +34,14 @@ json format hyperparamter experiment setup files
 "n_validation_set_size": "0.0", 
 "n_validation_folds": "2", 
 "n_bound_tree_size": "false", 
-+ "n_min_tree_size_value": "100", 
-+ "n_max_children": "4", 
-+ "n_max_depth": "4", 
-+ "n_prob_of_int_leaf_gen": "0.6", 
-+ "n_fun_range": "[0.01, 1.0]", 
-+ "n_weight_range": "[0.0, 1.0]", 
-+ "n_fun_type": "sigmoid", 
-+ "n_out_fun_type": "sigmoid", 
+"n_min_tree_size_value": "100", 
+"n_max_children": "4", 
+"n_max_depth": "4", 
+"n_prob_of_int_leaf_gen": "0.6", 
+"n_fun_range": "[0.01, 1.0]", 
+"n_weight_range": "[0.0, 1.0]", 
+"n_fun_type": "sigmoid", 
+"n_out_fun_type": "sigmoid", 
 "n_param_optimizer": "gd", 
 "n_algo_param": "rmsprop", 
 "n_gd_eval_mode": "stochastic", 
