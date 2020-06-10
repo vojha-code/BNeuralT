@@ -19,6 +19,7 @@ Runable JAR files that can be directly run from command line
 ```diff
 # evaluation of classification and regression learning problems pre-trained models and reproducing results in Table 1
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+
 # evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 2
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
@@ -45,7 +46,10 @@ Under eclipse project necessary *run configuration* setup is as follows:
 Runable JAR files that can be directly run from command line
 
 ```diff
+# running cost fucntions (tree) for each example in Java Threads (parallel loop) -  effective for large problems only  
 - java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
+
+# running cost fucntions (tree) for each example sequentially (native loop) -  effective for small problems only
 - java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
 ```
 
