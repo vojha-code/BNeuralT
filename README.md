@@ -15,10 +15,10 @@ The BNeuralT algorithm is written in [Java version 8](https://java.com/en/downlo
 The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencises. 
   - [tensorflow 2.1](https://www.tensorflow.org/install)
   - [Keras 2.3](https://keras.io/)
-  - [NumPy](https://numpy.org/)
-  - [scikit-learn](https://scikit-learn.org/stable/)
-  - [scipy](https://www.scipy.org/)
-  - [pandas](https://pandas.pydata.org/)
+  - [NumPy 1.17.5](https://numpy.org/)
+  - [scikit-learn 0.19.1](https://scikit-learn.org/stable/)
+  - [scipy 1.4.1](https://www.scipy.org/)
+  - [pandas 0.23](https://pandas.pydata.org/)
 
 
 ## Project structure, data, and source code files
