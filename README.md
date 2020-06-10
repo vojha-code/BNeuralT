@@ -17,8 +17,8 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 Runable JAR files that can be directly run from command line
 
 ```diff
-java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
-java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
+- java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+- java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
 
 Eclipse project flise structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
