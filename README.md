@@ -7,11 +7,18 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 
 
 ## Dependencies and configurations
-...
 
-[EJML](http://ejml.org/wiki/index.php?title=Main_Page)
-[json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) 
+The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencises. 
+  -The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
+  - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
 
+The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencises. 
+  - [tensorflow 2.1](https://www.tensorflow.org/install)
+  - [Keras 2.3](https://keras.io/)
+  - [NumPy](https://numpy.org/)
+  - [scikit-learn](https://scikit-learn.org/stable/)
+  - [scipy](https://www.scipy.org/)
+  - [pandas](https://pandas.pydata.org/)
 
 
 ## Project structure, data, and source code files
