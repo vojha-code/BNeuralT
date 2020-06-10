@@ -24,12 +24,12 @@ json format hyperparamter experiment setup files
 
 ```diff
 {
-"n_num_exp": "1",     - number of times an experment to be rapeated <br>
-"n_data_name": "iris.csv", <br>
-"n_problem_type": "Classification", <br>
-"n_should_normalize_data": "true", <br>
-"n_scale": "[0.0, 1.0]", <br>
-"n_validation_method": "holdout", <br>
+"n_num_exp": "1",     - number of times an experment to be rapeated
+"n_data_name": "iris.csv", 
+"n_problem_type": "Classification",
+"n_should_normalize_data": "true", 
+"n_scale": "[0.0, 1.0]", 
+"n_validation_method": "holdout", 
 "n_training_set_size": "0.8", <br>
 "n_validation_set_size": "0.0", <br>
 "n_validation_folds": "2", <br>
