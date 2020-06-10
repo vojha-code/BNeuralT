@@ -11,7 +11,15 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 
 
 ## Project structure, data, and source code files
-...
+Setup of exlipse project strcutre is as follows:
+- BNeuralT (root)
+  - bin
+  - data (*csv data files*)
+  - dependencies (EJML and JSON)
+  - model
+    - view (*javascript and HTML files for tree models*)
+  - src (Java version 8 source files)
+  - trained_models 
 
 ## Model Evaluation
 ### Step 1 - test accuracry collection from pre-trained models
