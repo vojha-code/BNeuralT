@@ -9,6 +9,10 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 ## Dependencies and configurations
 ...
 
+[EJML](http://ejml.org/wiki/index.php?title=Main_Page)
+[json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) 
+
+
 
 ## Project structure, data, and source code files
 ###### project directory structure 
