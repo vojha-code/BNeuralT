@@ -41,7 +41,6 @@ MNIST files can be downloaded from
   - [mnist.csv](https://drive.google.com/file/d/1MVmbNkIsYvxS3apGiyOrAq_dpC5OQ8X_/view) processed to fit with data pre-processing
   - [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
 
-###### project directory structure 
 
 ## Model Evaluation
 ### Step 1 - test accuracy collection from pre-trained models
