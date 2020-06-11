@@ -3,16 +3,16 @@ Ad-hoc Neural Tree Generation and training using Backpropagation Algorithm
 
 
 ## Algorithm
-BNeuralT is a machine learning algorithm for learning from data. BNeuralT is applied three categories of learning problems in the examples given here: classification, regression and pattern recognition. The strngth oif algorithm is in its effeciency and robustness in producing low compplexity and high perfroaing models. 
+BNeuralT is a machine learning algorithm for learning from data. BNeuralT is applied three categories of learning problems in the examples given here: classification, regression and pattern recognition. The strength of algorithm is in its efficiency and robustness in producing low complexity and high performing models. 
 
 
 ## Dependencies and configurations
 
-The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencises. 
+The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
   -The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
   - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
 
-The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencises. 
+The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencies. 
   - [tensorflow 2.1](https://www.tensorflow.org/install)
   - [Keras 2.3](https://keras.io/)
   - [NumPy 1.17.5](https://numpy.org/)
@@ -23,13 +23,13 @@ The MLP algorithm and python scripts is written in [Python 3.5](https://www.pyth
 
 ## Project structure, data, and source code files
 ###### project directory structure 
-Setup of exlipse project strcutre is as follows:
+Setup of Eclipse project structure is as follows:
 - BNeuralT (root)
   - bin
   - data (*csv data files*)
   - dependencies (EJML and JSON)
   - model
-    - view (*javascript and HTML files for tree models*)
+    - view (*JavaScript and HTML files for tree models*)
   - src (Java version 8 source files)
   - trained_models 
 ###### datasets
@@ -43,8 +43,8 @@ MNIST files can be downloaded from
 ###### project directory structure 
 
 ## Model Evaluation
-### Step 1 - test accuracry collection from pre-trained models
-Runable JAR files that can be directly run from command line
+### Step 1 - test accuracy collection from pre-trained models
+Runnable JAR files that can be directly run from command line
 
 ```diff
 # evaluation of classification and regression problems pre-trained models test accuracy collection
@@ -54,7 +54,7 @@ Runable JAR files that can be directly run from command line
 - java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
 
-Eclipse project flise structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
+Eclipse project files structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
 ```diff
 + EvaluateTreeModels.java
 ```
@@ -92,7 +92,7 @@ Python 3.5 and above version will run the following scripts
       - dir of a dataset 
         - 30 dir <data_name instance number>
           - 6 pre trained model files <Optimizer name models [DOT] json> 
-          - 1 experiment files <"experiment" [DOT] txt> preserverd training data sequence
+          - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
   - BNeuralT_pre_trained_class_reg_models_coll.csv
   - MLP_Keras_TF_models_coll.csv
   - Table_1_class_reg_BNeuralT_MLP_models.csv
@@ -105,18 +105,18 @@ Python 3.5 and above version will run the following scripts
 ## Model Training 
 
 ### Model training using command line 
-Runable JAR files that can be directly run from command line
+Runnable JAR files that can be directly run from command line
 
 ```diff
-# running cost fucntions (tree) for each example in Java Threads (parallel loop) -  effective for large problems only  
+# running cost functions (tree) for each example in Java Threads (parallel loop) -  effective for large problems only  
 - java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
 
-# running cost fucntions (tree) for each example sequentially (native loop) -  effective for small problems only
+# running cost functions (tree) for each example sequentially (native loop) -  effective for small problems only
 - java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
 ```
 
 ### Model training using source code [Eclipse project]
-Eclipse project flise structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point of the training models is:
+Eclipse project files structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point of the training models is:
 ```diff
 + TrainTree.java
 ```
@@ -126,8 +126,8 @@ Under eclipse project necessary *run configuration* setup is as follows:
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
 
-### Hyperparamter setting
-experiment_training_setup.txt is a json format hyperparamter experiment setup arrangement of hyperparamters.
+### Hyperparameter setting
+experiment_training_setup.txt is a json format hyperparameter experiment setup arrangement of hyperparameters.
 
 ```diff
 {"n_num_exp": "1",                  [1,2,3... ] - number of times an experiment to be repeated
@@ -159,3 +159,5 @@ experiment_training_setup.txt is a json format hyperparamter experiment setup ar
 "n_check_epoch_set": "test"}        ["train", "test"]  check models performance on training set and test set during the learning it on training set.
 ```
 
+## MLP Models Training and Evaluation
+..
