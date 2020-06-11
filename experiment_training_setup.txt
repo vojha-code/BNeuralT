@@ -22,7 +22,7 @@
 "n_gd_eval_mode": "stochastic",
 "n_gd_batch_size": "10"
 "n_gd_precision": "0.0000000001",
-"n_gd_eta": "0.01",
+"n_gd_eta": "0.1",
 "n_gd_gamma": "0.9",
 "n_gd_eps": "0.0000000001",
 "n_gd_beta": "0.9",
