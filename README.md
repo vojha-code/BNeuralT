@@ -38,7 +38,7 @@ All csv files for classification and regression learning problems are in directo
 
 MNIST csv files is too big to upload on GitHub - can be downloaded and put in the folder *data*
 MNIST files can be downloaded from
-  - [mnist.csv](https://drive.google.com/file/d/1MVmbNkIsYvxS3apGiyOrAq_dpC5OQ8X_/view) processed to fit with data pre-processing
+  - [mnist.csv](https://drive.google.com/file/d/10FtlGn6m1RkzCp4s6GfDlWzCvsPjcuVG/view?usp=sharing) processed to fit with data pre-processing
   - [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
 
 
