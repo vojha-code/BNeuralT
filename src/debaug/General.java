@@ -18,7 +18,7 @@ public class General {
 		int bc = e.length;
 		int bs = -1;
 		int count = 0;
-		Collections.shuffle(r);// Shuffle // System.out.println("Shuffled:"+randIndex);
+		Collections.shuffle(r);// Shuffle //  System.out.println("Shuffled:"+randIndex);
 		System.out.println(Arrays.toString(e));
 		System.out.println(r);
 		while(bc > 0) {
