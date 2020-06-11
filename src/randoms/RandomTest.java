@@ -5,10 +5,6 @@
  */
 package randoms;
 
-/**
- *
- * @author ojh0009
- */
 public class RandomTest {
     public static void main(String args[]){
         MersenneTwisterFast m_Random = new MersenneTwisterFast();
