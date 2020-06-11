@@ -9,8 +9,9 @@ BNeuralT is a machine learning algorithm for learning from data. BNeuralT is app
 ## Dependencies and configurations
 
 The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
-  -The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
+  - The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
   - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
+  - [D3js](https://d3js.org/) is used for <svg> of model files.
 
 The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencies. 
   - [tensorflow 2.1](https://www.tensorflow.org/install)
