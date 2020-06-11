@@ -163,7 +163,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 ##### Directory structure and files 
 
 - BNeuralT
-  - sourceMLP_tf
+  - source_mlp_tf
     - data
     - outputs
     - evaluate_MLP_class_reg_TF.py
