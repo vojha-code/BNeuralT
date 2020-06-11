@@ -48,15 +48,15 @@ Runnable JAR files that can be directly run from command line
 
 ```diff
 # evaluation of classification and regression problems pre-trained models test accuracy collection
-- java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
+-$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 
 # evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 2
-- java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
+-$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
 
 Eclipse project files structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
 ```diff
-+ EvaluateTreeModels.java
++$ EvaluateTreeModels.java
 ```
 Under eclipse project necessary *run configuration* setup is as follows:
 * Command argument option: 
@@ -69,13 +69,13 @@ Python 3.5 and above version will run the following scripts
 
 ```diff
 # evaluation of classification and regression problems pre-trained models and reproducing results in Table 1
-! python evaluateTreeModels.py
+!$ python evaluateTreeModels.py
 
 # evaluation of classification and regression problems mean and standard deviation Table
-! python evaluateTreeModelsMeanStd.py
+!$ python evaluateTreeModelsMeanStd.py
 
 # evaluation of classification and regression problems Welch's t-test Table
-! python evaluateTreeModelsStats.py
+!$ python evaluateTreeModelsStats.py
 ```
 
 ### Pre-trained models files and folder structure setup for model evaluation
@@ -109,16 +109,16 @@ Runnable JAR files that can be directly run from command line
 
 ```diff
 # running cost functions (tree) for each example in Java Threads (parallel loop) -  effective for large problems only  
-- java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
+-$ java -Xms7000m -Xmx7000m -jar trainTreeModel_Prll.jar
 
 # running cost functions (tree) for each example sequentially (native loop) -  effective for small problems only
-- java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
+-$ java -Xms7000m -Xmx7000m -jar trainTreeModel_Seq.jar
 ```
 
 ### Model training using source code [Eclipse project]
 Eclipse project files structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point of the training models is:
 ```diff
-+ TrainTree.java
++$ TrainTree.java
 ```
 
 Under eclipse project necessary *run configuration* setup is as follows:
@@ -174,7 +174,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
   
 ```diff
 # it takes files in output folder generate a performance csv files
-! train_MLP_class_reg_TF.py
+!$ train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
 ```diff
@@ -186,6 +186,6 @@ BATCH_SIZE = 10
   
 ```diff
 # it takes files in output folder generate a performance csv files
-! evaluate_MLP_class_reg_TF.py
+!$ evaluate_MLP_class_reg_TF.py
 
 ```
