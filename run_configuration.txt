@@ -1,6 +1,3 @@
-
-Folder structure -  Eclipse
-
 Training a model
 Experiment setup file and options
 Command
@@ -21,10 +18,10 @@ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 
 Run Configuration setup 
-Command argument option
+Command argument options
 <empty>
 <mnist>
 VM-Argument for 
 <-Xms7000m -Xmx7000m>
 
-EvaluateTreeModel.java
+EvaluateTreeModels.java
