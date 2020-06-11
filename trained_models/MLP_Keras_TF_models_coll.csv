@@ -1,4 +1,4 @@
-,Problem,Data,Algo,AccTst,Param
+index,Problem,Data,Algo,AccTst,Param
 0,class,australian,Adagrad,0.8695651888847351,1702
 1,reg,baseball,Adagrad,0.7333511699847842,1801
 2,class,wisconsin,Adagrad,0.9824561476707458,3302
