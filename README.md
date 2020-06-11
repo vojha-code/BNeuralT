@@ -170,14 +170,22 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
     - train_MLP_class_reg_TF.py
     - data processing scripts [dot]py files
   
-  ##### Model training
+##### Model training
   
-  ```diff
-  ! train_MLP_class_reg_TF.py
-  ```
+```diff
+# it takes files in output folder generate a performance csv files
+! train_MLP_class_reg_TF.py
+```
+##### hyperparameter setup
+```diff
+EPOCHS = 50
+BATCH_SIZE = 10
+```
+
+##### Model evaluation
   
-  ##### Model evaluation
-  
-  ```diff
-  ! evaluate_MLP_class_reg_TF.py
-  ```
+```diff
+# it takes files in output folder generate a performance csv files
+! evaluate_MLP_class_reg_TF.py
+
+```
