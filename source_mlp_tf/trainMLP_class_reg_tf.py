@@ -54,7 +54,7 @@ for j in range(len(data_file_set)):
         n_problem_type = 'Classification' # 'Regression' # 'Classification'
     else:
         n_problem_type = 'Regression' # 'Regression' # 'Classification'
-    n_problem_type = 'Regression' # 'Regression' # 'Classification'
+    #n_problem_type = 'Regression' # 'Regression' # 'Classification'
     
     data_results_coll = {}
     for i in range(expleriment_run):    
