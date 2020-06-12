@@ -185,7 +185,7 @@ BATCH_SIZE = 10
 ##### Model evaluation
   
 ```diff
-# it generate a performance csv files and put in output folder
+# it generate a performance csv file and put in output folder
 !$ evaluate_MLP_class_reg_TF.py
 
 # it prints forward pass time for each dataset
