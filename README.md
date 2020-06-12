@@ -173,7 +173,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 ##### Model training
   
 ```diff
-# it takes files in output folder generate a performance csv files
+# it generate a performance "[DOT]npy" files and put in output folder
 !$ train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
@@ -185,7 +185,10 @@ BATCH_SIZE = 10
 ##### Model evaluation
   
 ```diff
-# it takes files in output folder generate a performance csv files
+# it generate a performance csv files and put in output folder
 !$ evaluate_MLP_class_reg_TF.py
+
+# it prints forward pass time for eachg dataset by mlp
+!$ time_tau_mlp.py
 
 ```
