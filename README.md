@@ -188,7 +188,7 @@ BATCH_SIZE = 10
 # it generate a performance csv files and put in output folder
 !$ evaluate_MLP_class_reg_TF.py
 
-# it prints forward pass time for eachg dataset by mlp
+# it prints forward pass time for each dataset
 !$ time_tau_mlp.py
 
 ```
