@@ -178,8 +178,8 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 ```
 ##### hyperparameter setup
 ```diff
-EPOCHS = 50
-BATCH_SIZE = 10
+EPOCHS = 50      [1,2,3,...] gradient descent learning epochs -  balance it with learning rate 
+BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set size) for a training set.
 ```
 
 ##### Model evaluation
