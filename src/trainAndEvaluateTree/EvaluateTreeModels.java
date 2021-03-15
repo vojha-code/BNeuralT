@@ -39,7 +39,8 @@ public class EvaluateTreeModels {
 		String[] data_names_calss_reg = { "iris.csv", "wdbc.csv", "wine.csv", "heart.csv", "ionosphere.csv", "australian.csv", "pima.csv", "glass.csv", "vehicle.csv","dee.csv", "mpg6.csv", "diabetese.csv", "baseball.csv", "friedman.csv"};
 		String[] data_names_ptrn = { "mnist.csv"};
 
-		String collect_directory_res =  "File,Data,Algo,Size,Param,AccTst,TstTime,FunEvalTime\n";
+		//String collect_directory_res =  "File,Data,Algo,Size,Param,AccTst,TstTime,FunEvalTime\n";
+		String  collect_directory_res =  "File,Data,Algo,Size,Fun,Leaf,Param,ETst,TstTime,FunEvalTime\n";
 		//String  collect_directory_res =  "File,Data,Algo,Size,Fun,Leaf,Param,Etrn,ETst,RTrn,RTst,TrnTime,TstTime,FunEvalTime\n";
 
 		File fileDirectory = null;
@@ -56,7 +57,7 @@ public class EvaluateTreeModels {
 			data_name_list = data_names_calss_reg;
 			summaryFile = new File(fileDirectory+File.separator+".."+File.separator+"BNeuralT_"+fileDirectory.getName()+"_coll.csv");
 		}else {
-			collect_directory_res =  "File,Data,Algo,Size,Param,ErrTst\n";
+			//collect_directory_res =  "File,Data,Algo,Size,Param,ErrTst\n";
 			System.out.println("Loading MNIST data 70,000 examples (wait 8GB RMA: 50-70 seconds..)");
 			System.out.println("Data first 60,000 examples are training and last 10,000 are test..");
 			fileDirectory = new File(filePath+ "pre_trained_mnist_models_tab2");
@@ -93,6 +94,8 @@ public class EvaluateTreeModels {
 			}else {
 				listOfFilesL2 = listOfFiles;
 			}
+			
+			//reading and collecting experiment results
 			for(int j = 0; j < listOfFilesL2.length; j++) {
 				if(listOfFilesL2[j].toString().contains(data_name.split("\\.")[0])){
 					//System.out.println("Checking Directory: "+listOfFilesL2[j].toString());
@@ -227,7 +230,8 @@ public class EvaluateTreeModels {
 				}
 			} */
 			String algoVal = (treeFile.split("optPRM")[1]).split("model")[0];
-			loopCollect = loopCollect + treeFile+","+data_name+","+algoVal+","+treeSize+","+treeParam+",";
+			//loopCollect = loopCollect + treeFile+","+data_name+","+algoVal+","+treeSize+","+treeParam+",";
+			loopCollect = loopCollect + treeFile+","+data_name+","+algoVal+","+treeSize+","+treeFunNode+","+treeLeafNode+","+treeParam+",";
 			//loopCollect = loopCollect + treeFile+","+data_name+","+algoVal+","+treeSize+","+treeFunNode+","+treeLeafNode+","+treeParam+",";
 
 			//System.out.println("Tree: "+treeFile);
@@ -261,7 +265,8 @@ public class EvaluateTreeModels {
 				if(evalType.equalsIgnoreCase("class_reg")){
 					loopCollect = loopCollect + (1.0 - (double)errTst.get(0))+","; // test error
 				}else {
-					loopCollect = loopCollect + (double)errTst.get(0); // test error
+					loopCollect = loopCollect + (double)errTst.get(0)+","; // test error
+					//loopCollect = loopCollect + (double)errTst.get(0); // test error
 				}
 			}else {
 				//loopCollect = loopCollect + errTrn.get(0)+","+errTst.get(0)+","+errTrn.get(2)+","+errTst.get(2)+",";
@@ -272,6 +277,9 @@ public class EvaluateTreeModels {
 			}
 			//loopCollect = loopCollect + timeTrain+","+timeTst+","+(timeTrain/lengthTrn);
 			if(evalType.equalsIgnoreCase("class_reg")){
+				loopCollect = loopCollect + timeTst+","+(timeTst/test_Tr.length);
+			}else {
+				//Suppress if you do notwant MNIST time
 				loopCollect = loopCollect + timeTst+","+(timeTst/test_Tr.length);
 			}
 			collect = collect + loopCollect +"\n";
