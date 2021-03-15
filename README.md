@@ -145,7 +145,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 "n_prob_of_int_leaf_gen": "0.6",    - a value in [0.0 - 1.0] its probability of an internal node is a leaf (terminal) node - effective for reducing tree size
 "n_weight_range": "[0.0, 1.0]",     - neural weight initialization
 "n_fun_type": "sigmoid",            ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
-"n_out_fun_type": "sigmoid",        ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
+"n_out_fun_type": "sigmoid",        ["sigmoid", "ReLU", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
 "n_algo_param": "rmsprop",          ["gd","momentum_gd","nesterov_accelerated_gd","adagrad","rmsprop","adam"] - gradient descent optimizers
 "n_gd_eval_mode": "stochastic",     ["stochastic", "mini_batch", "batch"] - stochastic and mini_batch are efective
 "n_gd_batch_size": "10"             [1,2,3....] a number appropriate (smaller than training set size)
@@ -178,8 +178,17 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 ```
 ##### hyperparameter setup
 ```diff
+EXP_RUN = 1      [1,2,3,...] number of instance of the experments
 EPOCHS = 50      [1,2,3,...] gradient descent learning epochs -  balance it with learning rate 
 BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set size) for a training set.
+
+solver=['RMSprop', 'Adam','Adagrad', 'SGD','MGD', 'NAG']
+
+FUN = 'sigmoid'  ["sigmoid", "relu" "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
+ES = 5           [5, 10, 'No'] - percentage of epochs to try for early stopping
+REG = 'No'       ['l1_l2' or 'No'] - regularization
+OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 leanring rate for 'RMSprop', 'Adam','Adagrad' and 0.01 learning rate for 'SGD','MGD', 'NAG' 
+
 ```
 
 ##### Model evaluation
@@ -216,6 +225,9 @@ BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set siz
 ##### hyperparameter setup
 ```diff
 Hyperparamter setting is same as default setting mention in Scikit-learn libarary:
+
+EXP_RUN = 1      [1,2,3,...] number of instance of the experments 
+
 Decicion tree classifier:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier
 Decicion tree regression:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor
 
