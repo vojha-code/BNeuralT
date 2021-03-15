@@ -192,3 +192,49 @@ BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set siz
 !$ time_tau_mlp.py
 
 ```
+
+## Other Algorithms Models Training and Evaluation
+##### Directory structure and files 
+
+- BNeuralT
+  - source_mlp_tf
+    - data
+    - outputs
+    - evaluate_MLP_class_reg_TF.py
+    - train_DT_class_reg_Sklern.py
+    - train_GP_class_reg_Sklern.py
+    - train_NBC_class_reg_Sklern.py
+    - train_SVM_class_reg_Sklern.py
+    - data processing scripts [dot]py files
+  
+##### Model training
+  
+```diff
+# it generate a performance "[DOT]npy" files and put in output folder
+!$ train_MLP_class_reg_TF.py
+```
+##### hyperparameter setup
+```diff
+Hyperparamter setting is same as default setting mention in Scikit-learn libarary:
+Decicion tree classifier:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier
+Decicion tree regression:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor
+
+Gaussian process classification: https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html#sklearn.gaussian_process.GaussianProcessRegressor
+Gaussian process regression: https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html#sklearn.gaussian_process.GaussianProcessRegressor
+
+Naive Bayes classifier: https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB
+
+Support vector machine classifer: https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC
+Support vector machine regression: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR
+```
+
+##### Model evaluation
+  
+```diff
+# it generates a performance csv file and put in the output folder
+!$ evaluate_MLP_class_reg_TF.py
+
+# it prints forward pass time for each dataset
+!$ time_tau_mlp.py
+
+```
