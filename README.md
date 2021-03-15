@@ -232,7 +232,7 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
   
 ```diff
 # it generates a performance csv file and put in the output folder
-!$ evaluate_MLP_class_reg_TF.py
+!$ evaluate_Other_class_reg_TF.py
 
 # it prints forward pass time for each dataset
 !$ time_tau_mlp.py
