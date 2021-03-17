@@ -8,7 +8,7 @@ BNeuralT is a machine learning algorithm for learning from data. BNeuralT is app
 
 ## Dependencies and configurations
 
-The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
+The BNeuralT algorithm is written in [Java version 11](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
   - The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
   - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
   - [D3js](https://d3js.org/) is used for svg of model files.
@@ -31,7 +31,7 @@ Setup of Eclipse project structure is as follows:
   - dependencies (EJML and JSON)
   - model
     - view (*JavaScript and HTML files for tree models*)
-  - src (Java version 8 source files)
+  - src (Java version 11 source files)
   - trained_models 
 ###### datasets
 All csv files for classification and regression learning problems are in directory *data*
@@ -95,10 +95,10 @@ Python 3.5 and above version will run the following scripts
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
   - BNeuralT_pre_trained_class_reg_models_coll.csv
   - MLP_Keras_TF_models_coll.csv
-  - Table_1_class_reg_BNeuralT_MLP_models.csv
-  - Table_1_mean_std_class_reg_BNeuralT_MLP_models.csv
-  - Table_1_stats_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_BNeuralT_models.csv
+  - Table_2_class_reg_BNeuralT_MLP_models.csv
+  - Table_2_mean_std_class_reg_BNeuralT_MLP_models.csv
+  - Table_2_stats_class_reg_BNeuralT_MLP_models.csv
+  - Table_4_BNeuralT_models.csv
 
 
 
