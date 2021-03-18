@@ -80,12 +80,11 @@ Under eclipse project necessary *run configuration* setup is as follows:
         - 30 dir <data_name instance number>
           - 6 pre trained model files <Optimizer name models [DOT] json> 
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
-  - BNeuralT_pre_trained_class_reg_models_coll.csv
-  - MLP_Keras_TF_models_coll.csv
-  - Table_2_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_mean_std_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_stats_class_reg_BNeuralT_MLP_models.csv
-  - Table_4_BNeuralT_models.csv
+    - BNeuralT_pre_trained_class_reg_models_coll.csv  (This BNeuralT test results for Table 2)
+    - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv
+    - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)           
+    - Table_A1_and_All_experiments_results.csv  
+    - Table_A2_mean_of_all_experiments.csv
 
 
 
