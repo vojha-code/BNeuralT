@@ -152,9 +152,9 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
   - source_mlp_tf
     - data
     - outputs
-    - evaluate_MLP_class_reg_TF.py
     - train_MLP_class_reg_TF.py
-    - data processing scripts [dot]py files
+    - data processing scripts [dot]py files  
+  - evaluate_MLP_class_reg_TF.py
   
 ##### Model training
   
@@ -192,13 +192,12 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
   - source_mlp_tf
     - data
     - outputs
-    - evaluate_MLP_class_reg_TF.py
     - train_DT_class_reg_Sklern.py
     - train_GP_class_reg_Sklern.py
     - train_NBC_class_reg_Sklern.py
     - train_SVM_class_reg_Sklern.py
     - data processing scripts [dot]py files
-  - evaluate_MLP_class_reg_TF.py 
+  - evaluate_Other_class_reg_sklearn.py
   
 ##### Model training
   
