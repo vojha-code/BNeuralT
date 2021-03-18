@@ -43,7 +43,7 @@ MNIST files can be downloaded from
 
 
 ## Model Evaluation
-### Step 1 - test accuracy collection from pre-trained models
+### Test accuracy collection from pre-trained models
 Runnable JAR files that can be directly run from command line
 
 ```diff
@@ -64,14 +64,6 @@ Under eclipse project necessary *run configuration* setup is as follows:
   - < mnist >
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
-### Step 2 - running python scripts for *results* CSV files 
-Python 3.5 and above version will run the following scripts
-
-```diff
-# evaluation of classification and regression problems pre-trained models and reproducing results in Table 2
-!$ python evaluateTreeModels.py
-
-```
 
 ### Pre-trained models files and folder structure setup for model evaluation
 
