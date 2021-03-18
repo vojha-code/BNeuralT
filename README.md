@@ -68,14 +68,9 @@ Under eclipse project necessary *run configuration* setup is as follows:
 Python 3.5 and above version will run the following scripts
 
 ```diff
-# evaluation of classification and regression problems pre-trained models and reproducing results in Table 1
+# evaluation of classification and regression problems pre-trained models and reproducing results in Table 2
 !$ python evaluateTreeModels.py
 
-# evaluation of classification and regression problems mean and standard deviation Table
-!$ python evaluateTreeModelsMeanStd.py
-
-# evaluation of classification and regression problems Welch's t-test Table
-!$ python evaluateTreeModelsStats.py
 ```
 
 ### Pre-trained models files and folder structure setup for model evaluation
