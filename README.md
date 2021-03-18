@@ -43,7 +43,7 @@ MNIST files can be downloaded from
 
 
 ## Model Evaluation
-### Step 1 - test accuracy collection from pre-trained models
+### Test accuracy collection from pre-trained models
 Runnable JAR files that can be directly run from command line
 
 ```diff
@@ -64,19 +64,6 @@ Under eclipse project necessary *run configuration* setup is as follows:
   - < mnist >
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
-### Step 2 - running python scripts for *results* CSV files 
-Python 3.5 and above version will run the following scripts
-
-```diff
-# evaluation of classification and regression problems pre-trained models and reproducing results in Table 1
-!$ python evaluateTreeModels.py
-
-# evaluation of classification and regression problems mean and standard deviation Table
-!$ python evaluateTreeModelsMeanStd.py
-
-# evaluation of classification and regression problems Welch's t-test Table
-!$ python evaluateTreeModelsStats.py
-```
 
 ### Pre-trained models files and folder structure setup for model evaluation
 
@@ -93,12 +80,11 @@ Python 3.5 and above version will run the following scripts
         - 30 dir <data_name instance number>
           - 6 pre trained model files <Optimizer name models [DOT] json> 
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
-  - BNeuralT_pre_trained_class_reg_models_coll.csv
-  - MLP_Keras_TF_models_coll.csv
-  - Table_2_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_mean_std_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_stats_class_reg_BNeuralT_MLP_models.csv
-  - Table_4_BNeuralT_models.csv
+    - BNeuralT_pre_trained_class_reg_models_coll.csv  (This BNeuralT test results for Table 2)
+    - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv
+    - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)           
+    - Table_A1_and_All_experiments_results.csv  
+    - Table_A2_mean_of_all_experiments.csv
 
 
 
@@ -212,6 +198,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
     - train_NBC_class_reg_Sklern.py
     - train_SVM_class_reg_Sklern.py
     - data processing scripts [dot]py files
+  - evaluate_MLP_class_reg_TF.py 
   
 ##### Model training
   
@@ -241,6 +228,6 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
   
 ```diff
 # it generates a performance csv file and put in the output folder
-!$ evaluate_Other_class_reg_TF.py
+!$ evaluate_Other_class_reg_sklearn.py
 
 ```
