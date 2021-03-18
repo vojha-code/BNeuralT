@@ -17,14 +17,12 @@ np_load_old = np.load
 np.load = lambda *a,**k: np_load_old(*a, allow_pickle=True, **k)
 
 #%%
-sfolder_Check = os.path.join(r'')
+sfolder_Check = os.path.join(r'C:\Users\yl918888\Desktop\BNeuralT\trained_models\traind_results_keras_TF_sklern\Other_algorithms')
 resfolder_Check = os.listdir(sfolder_Check)
-plotsPath = os.path.join(r"D:\BackUp_Research_GN\BPNT_Exp_Java\tables")
-#%%
+plotsPath = os.path.join(r"C:\Users\yl918888\Desktop\BNeuralT\trained_models")
 
 #exp	data	algo	error_trn	error_tst	corr_trn	corr_tst	r2_trn	r2_tst	tree_size	func_node	leaf_node	train_param	compute_time	problem
 
-#%%
 listExp = []
 listData = []
 listAlgo = []
@@ -43,18 +41,9 @@ listNull = []
 
 count = 0
 for fileName in  resfolder_Check:
-    lststr = fileName.replace('.', '_').split('B_1_')  
+    lststr = fileName.replace('.', '_').split('B_All_')  
     
-    if (
-        lststr[1] == 'sigmoid_ES_No_Reg_No_npy' or 
-        lststr[1] == 'sigmoid_ES_No_Reg_No_defopt_npy' or 
-        lststr[1] == 'relu_ES_No_Reg_No_npy' or 
-        lststr[1] == 'relu_ES_No_Reg_No_defopt_npy' or 
-        lststr[1] == 'sigmoid_ES_No_Reg_l1_l2_npy' or 
-        lststr[1] == 'sigmoid_ES_No_Reg_l1_l2_defopt_npy' or 
-        lststr[1] == 'sigmoid_ES_50_Reg_No__npy' or 
-        lststr[1] == 'sigmoid_ES_50_Reg_No_defopt__npy'
-        ):
+    if True:
         print(fileName)
         
         count +=1
@@ -69,7 +58,7 @@ for fileName in  resfolder_Check:
                 algoV = keyStrList[2]
                 keyVal = read_np[key]        
                 
-                listExp.append('MLP_'+lststr[1])
+                listExp.append(lststr[1])
                 listData.append(dataV)    
                 listAlgo.append(algoV)
                 
@@ -98,7 +87,7 @@ for fileName in  resfolder_Check:
                 #common null
                 listNull.append('') 
                 
-print('total expirments',(8*14),'=',count)
+print('total expirments =',count)
 #%%
 # exp	data	algo	
 # error_trn	error_tst	corr_trn	corr_tst	r2_trn	r2_tst	
@@ -128,6 +117,6 @@ df_performance['compute_time'] = listTime
 df_performance['problem'] = listProblem
 
 del df_performance['A']
-#%%◘
-df_performance.to_csv(os.path.join(plotsPath,'1_MLP_Master_File.csv'),index=False)
+#%%
+df_performance.to_csv(os.path.join(plotsPath,'Other_algorithm_results.csv'),index=False)
 print('data saved')

@@ -2,7 +2,7 @@
 """
 Created on Sun Mar 22 14:15:06 2020
 
-@author: yl918888
+@author: Anonymus
 """
 
 import os
@@ -17,10 +17,9 @@ np_load_old = np.load
 np.load = lambda *a,**k: np_load_old(*a, allow_pickle=True, **k)
 
 #%%
-sfolder_Check = os.path.join(r'')
+sfolder_Check = os.path.join(r'C:\Users\yl918888\Desktop\BNeuralT\trained_models\traind_results_keras_TF_sklern\MLP_experiments')
 resfolder_Check = os.listdir(sfolder_Check)
-plotsPath = os.path.join(r"D:\BackUp_Research_GN\BPNT_Exp_Java\tables")
-#%%
+plotsPath = os.path.join(r"C:\Users\yl918888\Desktop\BNeuralT\trained_models")
 
 #exp	data	algo	error_trn	error_tst	corr_trn	corr_tst	r2_trn	r2_tst	tree_size	func_node	leaf_node	train_param	compute_time	problem
 
@@ -129,5 +128,5 @@ df_performance['problem'] = listProblem
 
 del df_performance['A']
 #%%◘
-df_performance.to_csv(os.path.join(plotsPath,'1_MLP_Master_File.csv'),index=False)
+df_performance.to_csv(os.path.join(plotsPath,'MLP_All_results.csv'),index=False)
 print('data saved')
