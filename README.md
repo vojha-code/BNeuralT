@@ -8,7 +8,7 @@ BNeuralT is a machine learning algorithm for learning from data. BNeuralT is app
 
 ## Dependencies and configurations
 
-The BNeuralT algorithm is written in [Java version 8](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
+The BNeuralT algorithm is written in [Java version 11](https://java.com/en/download/) in Eclipse version 2020‑03 and has the following dependencies. 
   - The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
   - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
   - [D3js](https://d3js.org/) is used for svg of model files.
@@ -31,7 +31,7 @@ Setup of Eclipse project structure is as follows:
   - dependencies (EJML and JSON)
   - model
     - view (*JavaScript and HTML files for tree models*)
-  - src (Java version 8 source files)
+  - src (Java version 11 source files)
   - trained_models 
 ###### datasets
 All csv files for classification and regression learning problems are in directory *data*
@@ -95,10 +95,10 @@ Python 3.5 and above version will run the following scripts
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
   - BNeuralT_pre_trained_class_reg_models_coll.csv
   - MLP_Keras_TF_models_coll.csv
-  - Table_1_class_reg_BNeuralT_MLP_models.csv
-  - Table_1_mean_std_class_reg_BNeuralT_MLP_models.csv
-  - Table_1_stats_class_reg_BNeuralT_MLP_models.csv
-  - Table_2_BNeuralT_models.csv
+  - Table_2_class_reg_BNeuralT_MLP_models.csv
+  - Table_2_mean_std_class_reg_BNeuralT_MLP_models.csv
+  - Table_2_stats_class_reg_BNeuralT_MLP_models.csv
+  - Table_4_BNeuralT_models.csv
 
 
 
@@ -145,7 +145,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 "n_prob_of_int_leaf_gen": "0.6",    - a value in [0.0 - 1.0] its probability of an internal node is a leaf (terminal) node - effective for reducing tree size
 "n_weight_range": "[0.0, 1.0]",     - neural weight initialization
 "n_fun_type": "sigmoid",            ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
-"n_out_fun_type": "sigmoid",        ["sigmoid", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
+"n_out_fun_type": "sigmoid",        ["sigmoid", "ReLU", "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
 "n_algo_param": "rmsprop",          ["gd","momentum_gd","nesterov_accelerated_gd","adagrad","rmsprop","adam"] - gradient descent optimizers
 "n_gd_eval_mode": "stochastic",     ["stochastic", "mini_batch", "batch"] - stochastic and mini_batch are efective
 "n_gd_batch_size": "10"             [1,2,3....] a number appropriate (smaller than training set size)
@@ -178,8 +178,17 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
 ```
 ##### hyperparameter setup
 ```diff
+EXP_RUN = 1      [1,2,3,...] number of instance of the experments
 EPOCHS = 50      [1,2,3,...] gradient descent learning epochs -  balance it with learning rate 
 BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set size) for a training set.
+
+solver=['RMSprop', 'Adam','Adagrad', 'SGD','MGD', 'NAG']
+
+FUN = 'sigmoid'  ["sigmoid", "relu" "tanh"]- current implementation take sigmoid for "tanh" and other function enable (uncomment) the implementation or implement them
+ES = 5           [5, 10, 'No'] - percentage of epochs to try for early stopping
+REG = 'No'       ['l1_l2' or 'No'] - regularization
+OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 leanring rate for 'RMSprop', 'Adam','Adagrad' and 0.01 learning rate for 'SGD','MGD', 'NAG' 
+
 ```
 
 ##### Model evaluation
@@ -187,9 +196,6 @@ BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set siz
 ```diff
 # it generates a performance csv file and put in the output folder
 !$ evaluate_MLP_class_reg_TF.py
-
-# it prints forward pass time for each dataset
-!$ time_tau_mlp.py
 
 ```
 
@@ -216,6 +222,9 @@ BATCH_SIZE = 10  [1,2,3....] a number appropriate (smaller than training set siz
 ##### hyperparameter setup
 ```diff
 Hyperparamter setting is same as default setting mention in Scikit-learn libarary:
+
+EXP_RUN = 1      [1,2,3,...] number of instance of the experments 
+
 Decicion tree classifier:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier
 Decicion tree regression:  https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor
 
@@ -233,8 +242,5 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
 ```diff
 # it generates a performance csv file and put in the output folder
 !$ evaluate_Other_class_reg_TF.py
-
-# it prints forward pass time for each dataset
-!$ time_tau_mlp.py
 
 ```
