@@ -212,6 +212,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
     - train_NBC_class_reg_Sklern.py
     - train_SVM_class_reg_Sklern.py
     - data processing scripts [dot]py files
+  - evaluate_MLP_class_reg_TF.py 
   
 ##### Model training
   
@@ -241,6 +242,6 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
   
 ```diff
 # it generates a performance csv file and put in the output folder
-!$ evaluate_Other_class_reg_TF.py
+!$ evaluate_Other_class_reg_sklearn.py
 
 ```
