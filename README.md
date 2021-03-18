@@ -180,7 +180,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
 ##### Model evaluation
   
 ```diff
-# it generates a performance csv file and put in the output folder
+# it generates a performance csv file and put in the trained_model folder
 !$ evaluate_MLP_class_reg_TF.py
 
 ```
@@ -226,7 +226,7 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
 ##### Model evaluation
   
 ```diff
-# it generates a performance csv file and put in the output folder
+# it generates a performance csv file and put in the trained_model folder
 !$ evaluate_Other_class_reg_sklearn.py
 
 ```
