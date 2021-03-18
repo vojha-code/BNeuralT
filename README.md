@@ -160,7 +160,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
   
 ```diff
 # it generate a performance "[DOT]npy" files and put in output folder
-!$ train_MLP_class_reg_TF.py
+!$ python train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
 ```diff
@@ -181,7 +181,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
   
 ```diff
 # it generates a performance csv file and put in the trained_model folder
-!$ evaluate_MLP_class_reg_TF.py
+!$ python evaluate_MLP_class_reg_TF.py
 
 ```
 
@@ -203,7 +203,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
   
 ```diff
 # it generate a performance "[DOT]npy" files and put in output folder
-!$ train_MLP_class_reg_TF.py
+!$ python train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
 ```diff
@@ -227,6 +227,6 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
   
 ```diff
 # it generates a performance csv file and put in the trained_model folder
-!$ evaluate_Other_class_reg_sklearn.py
+!$ python  evaluate_Other_class_reg_sklearn.py
 
 ```
