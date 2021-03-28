@@ -69,12 +69,12 @@ Under eclipse project necessary *run configuration* setup is as follows:
 
 - BNeuralT
   - trained_models
-    - pre_trained_mnist_models_tab2 (MNIST dataset models)
+    <!--- - pre_trained_mnist_models_tab2 (MNIST dataset models)
       - mnist_pre_trained_models
         - BNeuralT 10K
         - BNeuralT 18K
         - BNeuralT 20K
-        - BNeuralT 200K
+        - BNeuralT 200K -->
     - pre_trained_class_reg_models
       - dir of a dataset 
         - 30 dir <data_name instance number>
@@ -82,7 +82,7 @@ Under eclipse project necessary *run configuration* setup is as follows:
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
     - BNeuralT_pre_trained_class_reg_models_coll.csv  (This BNeuralT test results for Table 2)
     - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv
-    - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)           
+    <!-- - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)   -->        
     - Table_A1_and_All_experiments_results.csv  
     - Table_A2_mean_of_all_experiments.csv
 
