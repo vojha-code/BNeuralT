@@ -36,11 +36,6 @@ Setup of Eclipse project structure is as follows:
 ###### datasets
 All csv files for classification and regression learning problems are in directory *data*
 
-MNIST csv files is too big to upload on GitHub - can be downloaded and put in the folder *data*
-MNIST files can be downloaded from
-  - [mnist.csv](https://drive.google.com/file/d/10FtlGn6m1RkzCp4s6GfDlWzCvsPjcuVG/view?usp=sharing) processed to fit with data pre-processing
-  - [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
-
 
 ## Model Evaluation
 ### Test accuracy collection from pre-trained models
@@ -50,8 +45,6 @@ Runnable JAR files that can be directly run from command line
 # evaluation of classification and regression problems pre-trained models test accuracy collection
 -$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar
 
-# evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 2
--$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
 ```
 
 Eclipse project files structure has a folder **src** in the folder under the package **trainAndEvaluateTree** main entry point for the models evaluation is:
@@ -69,20 +62,13 @@ Under eclipse project necessary *run configuration* setup is as follows:
 
 - BNeuralT
   - trained_models
-    - pre_trained_mnist_models_tab2 (MNIST dataset models)
-      - mnist_pre_trained_models
-        - BNeuralT 10K
-        - BNeuralT 18K
-        - BNeuralT 20K
-        - BNeuralT 200K
     - pre_trained_class_reg_models
       - dir of a dataset 
         - 30 dir <data_name instance number>
           - 6 pre trained model files <Optimizer name models [DOT] json> 
           - 1 experiment files <"experiment" [DOT] txt> preserved training data sequence
     - BNeuralT_pre_trained_class_reg_models_coll.csv  (This BNeuralT test results for Table 2)
-    - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv
-    - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)           
+    - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv       
     - Table_A1_and_All_experiments_results.csv  
     - Table_A2_mean_of_all_experiments.csv
 
@@ -160,7 +146,7 @@ experiment_training_setup.txt is a json format hyperparameter experiment setup a
   
 ```diff
 # it generate a performance "[DOT]npy" files and put in output folder
-!$ train_MLP_class_reg_TF.py
+!$ python train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
 ```diff
@@ -180,8 +166,8 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
 ##### Model evaluation
   
 ```diff
-# it generates a performance csv file and put in the output folder
-!$ evaluate_MLP_class_reg_TF.py
+# it generates a performance csv file and put in the trained_model folder
+!$ python evaluate_MLP_class_reg_TF.py
 
 ```
 
@@ -203,7 +189,7 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
   
 ```diff
 # it generate a performance "[DOT]npy" files and put in output folder
-!$ train_MLP_class_reg_TF.py
+!$ python train_MLP_class_reg_TF.py
 ```
 ##### hyperparameter setup
 ```diff
@@ -226,7 +212,7 @@ Support vector machine regression: https://scikit-learn.org/stable/modules/gener
 ##### Model evaluation
   
 ```diff
-# it generates a performance csv file and put in the output folder
-!$ evaluate_Other_class_reg_sklearn.py
+# it generates a performance csv file and put in the trained_model folder
+!$ python  evaluate_Other_class_reg_sklearn.py
 
 ```
