@@ -1,5 +1,0 @@
-File,Data,Algo,Size,Fun,Leaf,Param,ETst,TstTime,FunEvalTime
-BNeuralT_1_11K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,10160,1828,8331,11987,0.07699999999999996,1.447,1.447E-4
-BNeuralT_2_18K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,16739,2098,14640,18836,0.06589999999999996,1.585,1.585E-4
-BNeuralT_3_20K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,20172,3664,16507,23835,0.060799999999999965,2.331,2.331E-4
-BNeuralT_4_200K_mnist_optPRM_rmsprop_model.json,mnist,_rmsprop_,220956,21044,199911,241999,0.052000000000000046,19.172,0.0019172
