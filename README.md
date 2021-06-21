@@ -57,6 +57,15 @@ Under eclipse project necessary *run configuration* setup is as follows:
   - < mnist >
 * VM-Argument option: <-Xms7000m -Xmx7000m>
 
+Evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 4 
+```diff
+-$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
+```
+
+MNIST csv files is too big to upload on GitHub - can be downloaded and put in the folder *data*
+MNIST files can be downloaded from
+- [mnist.csv](https://drive.google.com/file/d/10FtlGn6m1RkzCp4s6GfDlWzCvsPjcuVG/view?usp=sharing) processed to fit with data pre-processing
+- [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
 
 ### Pre-trained models files and folder structure setup for model evaluation
 
@@ -71,9 +80,8 @@ Under eclipse project necessary *run configuration* setup is as follows:
     - Table_3_stats_of_all_exp_NT_RMSprop_vs_all.csv       
     - Table_A1_and_All_experiments_results.csv  
     - Table_A2_mean_of_all_experiments.csv
-    - pre_trained_models_MNIST
-
-
+    - pre_trained_models_MNIST (MNIST dataset models)
+    - Table_4_BNeuralT_models.csv   (This has BNeuralT models for MNIST dataset) 
 
 ## Model Training 
 
@@ -171,23 +179,6 @@ OptSet = ['_','_defopt'] - '_' -s 0.1 leaning rate and '_defopt indicate 0.001 l
 !$ python evaluate_MLP_class_reg_TF.py
 
 ```
-
-# evaluation of pattern recognition (MNIST) pre-trained models and reproducing results in Table 4 
--$ java -Xms7000m -Xmx7000m -jar evaluateTreeModels.jar mnist
-
-MNIST csv files is too big to upload on GitHub - can be downloaded and put in the folder *data*
-MNIST files can be downloaded from
-- [mnist.csv](https://drive.google.com/file/d/10FtlGn6m1RkzCp4s6GfDlWzCvsPjcuVG/view?usp=sharing) processed to fit with data pre-processing
-- [The MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
-
-    <!--- - pre_trained_mnist_models_tab2 (MNIST dataset models)
-- mnist_pre_trained_models
-- BNeuralT 10K
-- BNeuralT 18K
-- BNeuralT 20K
-- BNeuralT 200K -->
-
-<!-- - Table_4_BNeuralT_models.csv   (This BNeuralT models for MNIST dataset)   --> 
 
 ## Other Algorithms Models Training and Evaluation
 ##### Directory structure and files 
