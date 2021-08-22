@@ -3,8 +3,7 @@ Ad-hoc Neural Tree Generation and Training using Backpropagation Algorithm
 
 
 ## The Algorithm
-BNeuralT is a machine learning algorithm for learning from data. BNeuralT is applied three categories of learning problems in the examples given here: classification, regression and pattern recognition. The strength of algorithm is in its efficiency and robustness in producing low complexity and high performing models. Considering biologically plausible properties, this algorithm has a computational dendritic tree-like organization (see Fig). 
-![image](https://github.com/vojha-code/BNeuralT/blob/master/example_tree/tree_bio.svg)
+BNeuralT is a machine learning algorithm for learning from data. BNeuralT is applied three categories of learning problems in the examples given here: classification, regression and pattern recognition. The strength of algorithm is in its efficiency and robustness in producing low complexity and high performing models. Considering biologically plausible properties, this algorithm has a computational dendritic tree-like organization.
 
 ## Dependencies and configurations
 
