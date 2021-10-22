@@ -11,6 +11,7 @@ The BNeuralT algorithm is written in [Java version 11](https://java.com/en/downl
   - The algorithm uses DenseMatrix64 of [EJML](http://ejml.org/wiki/index.php?title=Main_Page)
   - JSON object [json-simple-1.1](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1) for saving trained models in json format. 
   - [D3js](https://d3js.org/) is used for svg of model files.
+  - [NetworkX 2.6.2](https://networkx.org/documentation/stable/tutorial.html) is used for visulizations
 
 The MLP algorithm and python scripts is written in [Python 3.5](https://www.python.org/downloads/release/python-350/) and has the following dependencies. 
   - [tensorflow 2.1](https://www.tensorflow.org/install)
